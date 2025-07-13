@@ -1,0 +1,30 @@
+
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gravhaug",
+        "start_year": -1500,
+        "end_year": -1000
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [6.81, 58.09]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Langhus",
+        "start_year": 800,
+        "end_year": 1050
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [6.83, 58.11]
+      }
+    }
+  ]
+}

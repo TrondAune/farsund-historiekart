@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Farsund historiekart</title>
+  <link href="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.css" rel="stylesheet" />
+  <style>
+    body { margin: 0; font-family: sans-serif; }
+    #map { position: absolute; top: 0; bottom: 60px; width: 100%; }
+    #slider-wrapper {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 10px;
+      background: rgba(255,255,255,0.9);
+    }
+    #year-label {
+      text-align: center;
+      font-weight: bold;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <div id="slider-wrapper">
+    <div id="year-slider"></div>
+    <div id="year-label">År: 1700 f.Kr.</div>
+  </div>
+
+  <script src="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
