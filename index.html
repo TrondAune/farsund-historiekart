@@ -50,22 +50,21 @@
     </div>
 
     <script>
-      // Use custom hosted terrain-only style
       const map = new maplibregl.Map({
         container: 'map',
-        style: 'style/terrain-natural.json',
+        style: 'https://api.maptiler.com/maps/3d/style.json?key=bx4XQJ9QdmUzndeBO1PS',
         center: [6.8, 58.1],
         zoom: 11
       });
 
       const info = document.getElementById('info');
       function showInfo(p){
-        info.innerHTML=`<h2>${p.name||'Ukjent objekt'}</h2><p><strong>Periode:</strong> ${fmtPeriod(p.start_year,p.end_year)}</p>`+
-          (p.description?`<p>${p.description}</p>`:'')+
-          (p.img?`<img src="${p.img}" alt="${p.name}">`:'');
+        info.innerHTML=\`<h2>\${p.name||'Ukjent objekt'}</h2><p><strong>Periode:</strong> \${fmtPeriod(p.start_year,p.end_year)}</p>\`+
+          (p.description?\`<p>\${p.description}</p>\`:'')+
+          (p.img?\`<img src="\${p.img}" alt="\${p.name}">\`:'');
         info.classList.remove('hidden');
       }
-      function fmtPeriod(s,e){const f=y=>y<0?`${Math.abs(y)} f.Kr.`:y;return `${f(s)} – ${f(e===9999?new Date().getFullYear():e)}`}
+      function fmtPeriod(s,e){const f=y=>y<0?\`\${Math.abs(y)} f.Kr.\`:y;return \`\${f(s)} – \${f(e===9999?new Date().getFullYear():e)}\`}
 
       map.on('load',()=>{
         map.addSource('historic',{type:'geojson',data:'data/mock-features.geojson'});
@@ -79,8 +78,12 @@
       noUiSlider.create(slider,{start:[-1700],connect:[true,false],range:{min:-1700,max:1900},step:50});
       const yearLabel=document.getElementById('year-label');
       yearLabel.textContent='År: 1700 f.Kr.';
-      slider.noUiSlider.on('update',v=>{const y=Math.round(v[0]);yearLabel.textContent=`År: ${y<0?Math.abs(y)+' f.Kr.':y}`;updateFilters(y);});
-      function updateFilters(y){const f=['all',['<=',['get','start_year'],y],['>=',['get','end_year'],y]];if(map.getLayer('historic-layer'))map.setFilter('historic-layer',f);if(map.getLayer('waterline-fill'))map.setFilter('waterline-fill',f);}
+      slider.noUiSlider.on('update',v=>{const y=Math.round(v[0]);yearLabel.textContent=\`År: \${y<0?Math.abs(y)+' f.Kr.':y}\`;updateFilters(y);});
+      function updateFilters(y){
+        const f=['all',['<=',['get','start_year'],y],['>=',['get','end_year'],y]];
+        if(map.getLayer('historic-layer')) map.setFilter('historic-layer',f);
+        if(map.getLayer('waterline-fill')) map.setFilter('waterline-fill',f);
+      }
     </script>
   </body>
 </html>
