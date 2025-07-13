@@ -1,1 +1,113 @@
-{"type": "FeatureCollection", "features": []}
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "start_year": -1700,
+        "end_year": -1200,
+        "name": "H\u00f8yvannstand i bronsealder",
+        "description": "Simulert kystlinje med 3 meter h\u00f8yere havniv\u00e5 enn i dag"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.79,
+              58.1
+            ],
+            [
+              6.795,
+              58.1
+            ],
+            [
+              6.795,
+              58.105
+            ],
+            [
+              6.79,
+              58.105
+            ],
+            [
+              6.79,
+              58.1
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "start_year": -1200,
+        "end_year": 500,
+        "name": "Moderert kystlinje",
+        "description": "Simulert kystlinje med 1.5 meter h\u00f8yere havniv\u00e5"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.791,
+              58.101
+            ],
+            [
+              6.794,
+              58.101
+            ],
+            [
+              6.794,
+              58.104
+            ],
+            [
+              6.791,
+              58.104
+            ],
+            [
+              6.791,
+              58.101
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "start_year": 500,
+        "end_year": 1900,
+        "name": "Moderne kystlinje",
+        "description": "Omtrentlig moderne kystlinje"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.792,
+              58.102
+            ],
+            [
+              6.793,
+              58.102
+            ],
+            [
+              6.793,
+              58.103
+            ],
+            [
+              6.792,
+              58.103
+            ],
+            [
+              6.792,
+              58.102
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
