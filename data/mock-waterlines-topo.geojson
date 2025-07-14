@@ -1,0 +1,77 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Steinalder kystlinje",
+        "start_year": -8000,
+        "end_year": -4000,
+        "description": "Simulert vannstand: +5.5 meter"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.4,
+              57.95
+            ],
+            [
+              7.2,
+              57.95
+            ],
+            [
+              7.2,
+              58.35
+            ],
+            [
+              6.4,
+              58.35
+            ],
+            [
+              6.4,
+              57.95
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bronsealder kystlinje",
+        "start_year": -1700,
+        "end_year": -500,
+        "description": "Simulert vannstand: +3.5 meter"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              6.5,
+              58.0
+            ],
+            [
+              7.1,
+              58.0
+            ],
+            [
+              7.1,
+              58.3
+            ],
+            [
+              6.5,
+              58.3
+            ],
+            [
+              6.5,
+              58.0
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
