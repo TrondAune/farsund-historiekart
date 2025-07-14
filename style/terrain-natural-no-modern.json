@@ -2,17 +2,22 @@
   "version": 8,
   "name": "Terrain Only",
   "sources": {
-    "hillshade": {
+    "terrain": {
       "type": "raster",
       "tiles": [
         "https://tiles.stadiamaps.com/tiles/stamen_terrain/{z}/{x}/{y}.jpg"
       ],
-      "tileSize": 256
+      "tileSize": 256,
+      "attribution": "Kartdata © Stadia Maps, CC BY 4.0"
     }
   },
-  "layers": [{
-    "id": "hillshade",
-    "type": "raster",
-    "source": "hillshade"
-  }]
+  "layers": [
+    {
+      "id": "terrain-layer",
+      "type": "raster",
+      "source": "terrain",
+      "minzoom": 0,
+      "maxzoom": 18
+    }
+  ]
 }
