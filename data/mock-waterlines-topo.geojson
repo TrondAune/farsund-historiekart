@@ -7,7 +7,7 @@
         "name": "Steinalder kystlinje",
         "start_year": -8000,
         "end_year": -4000,
-        "description": "Vannstand: +5.5 meter"
+        "description": "Simulert vannstand: +5.5 meter"
       },
       "geometry": {
         "type": "Polygon",
@@ -43,7 +43,7 @@
         "name": "Bronsealder kystlinje",
         "start_year": -1700,
         "end_year": -500,
-        "description": "Vannstand: +3.5 meter"
+        "description": "Simulert vannstand: +3.5 meter"
       },
       "geometry": {
         "type": "Polygon",
@@ -68,78 +68,6 @@
             [
               6.5,
               58.0
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Jernalder/Middelalder kystlinje",
-        "start_year": -500,
-        "end_year": 1500,
-        "description": "Vannstand: +2.0 meter"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              6.55,
-              58.05
-            ],
-            [
-              7.0,
-              58.05
-            ],
-            [
-              7.0,
-              58.25
-            ],
-            [
-              6.55,
-              58.25
-            ],
-            [
-              6.55,
-              58.05
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Moderne kystlinje",
-        "start_year": 1500,
-        "end_year": 1900,
-        "description": "Vannstand: +0.0 meter"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              6.6,
-              58.1
-            ],
-            [
-              6.95,
-              58.1
-            ],
-            [
-              6.95,
-              58.2
-            ],
-            [
-              6.6,
-              58.2
-            ],
-            [
-              6.6,
-              58.1
             ]
           ]
         ]
